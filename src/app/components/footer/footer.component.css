@@ -1,0 +1,49 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #6aaae6;
+    --secundario: #0ab92d;
+    --gris: #757575 ;
+    --underamarillo: #FFF735;
+    --underverde: #45FF35;
+
+  }
+footer { 
+    width:100%;
+     background-image:url(../../../assets/footer.png) ; 
+     min-height:250px;
+    padding:10px 0px 25px 0px ;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:  300px 300px 300px ;
+ 
+}
+
+.button{
+   background-color: #FFF735;
+   border-radius: .5rem;
+   width: 35%;
+   border: 1px solid #FFF735;
+   
+  }
+
+  .button1{
+    background-color: #45FF35;
+    border-radius: .5rem;
+    width: 35%;
+    border: 1px solid #45FF35;
+    
+   }
+ 
+ 
+   .text1{
+    margin-top: 120px;
+    margin-left: 30px;
+   }
