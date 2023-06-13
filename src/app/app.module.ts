@@ -7,6 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CommunityComponent } from './components/community/community.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { SplashComponent } from './components/splash/splash.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     FooterComponent,
     CommunityComponent,
     ActivitiesComponent,
-    GalleryComponent
+    GalleryComponent,
+    SplashComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
