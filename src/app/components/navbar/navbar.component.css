@@ -1,41 +1,43 @@
-
-.nav-container{
-    width: fit-content;
-    position:fixed;
-}
-.div-img{
-    background-color: #fff;
+.nav-container {
+  width: fit-content;
+  position: absolute;
+  z-index: 2;
 }
 
-.logo{
-    width: 8.5rem;
-    cursor: pointer;
+.div-img {
+  background-color: #fff;
 }
 
-.b-radius{
-    border-radius: 0px 35px 35px 0px;
+.logo {
+  width: 8.5rem;
+  cursor: pointer;
 }
 
-.touch:is(:hover, :focus, :active){
-    color: var(--white-2);
-    background-color: #69BBEA;
-    .nav-container{
-        background-color: #65257B;
-    }
+.b-radius {
+  border-radius: 0px 35px 35px 0px;
 }
-.touch-2:is(:hover, :focus, :active){
-    color: var(--white-2);
-    background-color: #65257B;
+
+.touch:is(:hover, :focus, :active) {
+  color: var(--white-2);
+  background-color: #69BBEA;
 }
-.touch-3:is(:hover, :focus, :active){
-    color: var(--white-2);
-    background-color: #E74339;
+
+.touch-2:is(:hover, :focus, :active) {
+  color: var(--white-2);
+  background-color: #65257B;
 }
-.touch-4:is(:hover, :focus, :active){
-    color: var(--white-2);
-    background-color: #AD0441;
+
+.touch-3:is(:hover, :focus, :active) {
+  color: var(--white-2);
+  background-color: #E74339;
 }
-.touch-5:is(:hover, :focus, :active){  
-    color: var(--white-2);
-    background-color: #D967CD;
+
+.touch-4:is(:hover, :focus, :active) {
+  color: var(--white-2);
+  background-color: #AD0441;
+}
+
+.touch-5:is(:hover, :focus, :active) {
+  color: var(--white-2);
+  background-color: #D967CD;
 }
