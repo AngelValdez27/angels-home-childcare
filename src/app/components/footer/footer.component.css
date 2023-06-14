@@ -13,7 +13,7 @@ footer {
      background-image:url(../../../assets/footer.png) ; 
      min-height:250px;
     padding:10px 0px 25px 0px ;
-    position:fixed;
+    position:relative;
     left:0px;
     bottom:0px;
     height:30px;
@@ -22,7 +22,7 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns:  300px 300px 300px ;
+    grid-template-columns:  25rem 25rem 25rem ;
  
 }
 
@@ -42,8 +42,9 @@ footer {
     
    }
  
- 
+
    .text1{
     margin-top: 120px;
     margin-left: 30px;
-   }
+    
+   } 
