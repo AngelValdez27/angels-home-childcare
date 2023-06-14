@@ -5,6 +5,7 @@ import { SplashComponent } from './components/splash/splash.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 
+import { CommunityComponent } from './components/community/community.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent},
   { path: 'activities', component: ActivitiesComponent}
 
+  { path: 'community', component: CommunityComponent }
 ];
 
 @NgModule({

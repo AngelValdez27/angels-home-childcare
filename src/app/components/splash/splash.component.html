@@ -1,14 +1,36 @@
-<section class="p-5 bg-splash">
-  <div class="offset-md-2 col-md-10 br-radius-30 bg-module">
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-    <h1>soy el splash y necesito una buena posición</h1>
-  </div>
-</section>
+<div class="bg-splash">
+  <section class="p-5">
+    <div class="div-container">
+      <div class="offset-md-2 col-md-10 br-radius-30 bg-module">
+        <div class="div-splash splash-radius-30">
+          <div>
+            <div class="txt-welcome offset-md-4 col-md-4">
+              <p class="">Somos profesionales en el cuidado infantil</p>
+              <button class="btn-aboutus" type="button" routerLink="/community">
+                Nosotros
+              </button>
+            </div>
+            <div class="div-circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- second part -->
+      <div class="col-md-4" style="height: 30rem">
+        <div class="container">
+          <swiper effect="cube">
+            <ng-template swiperSlide
+              ><img src="../../../assets/logo.jpg" alt=""
+            /></ng-template>
+            <ng-template swiperSlide
+              ><img src="../../../assets/logo.jpg" alt=""
+            /></ng-template>
+            <ng-template swiperSlide
+              ><img src="../../../assets/logo.jpg" alt=""
+            /></ng-template>
+          </swiper>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer class="footer"></app-footer>
+</div>
