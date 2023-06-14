@@ -9,6 +9,8 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { SplashComponent } from './components/splash/splash.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ActivitiesComponent,
     GalleryComponent,
     SplashComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

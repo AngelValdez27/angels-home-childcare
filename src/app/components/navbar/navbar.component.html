@@ -1,51 +1,53 @@
-<div
-  #container
-  class="nav-container"
-  [ngClass]="splash ? 'bg-splash' : 'bg-green-soft-2'"
-  [ngClass]="aboutus ? 'bg-aboutus' : 'bg-splash'"
-  [ngClass]="gallery ? 'bg-gallery' : 'bg-splash'"
-  [ngClass]="community ? 'bg-community' : 'bg-splash'"
-  [ngClass]="activities ? 'bg-activities' : 'bg-splash'"
-  [ngClass]="contactus ? 'bg-contactus' : 'bg-splash'"
->
-  <nav class="nav d-flex flex-column mt-3 txt-3 py-5 pe-4 gap-4">
-    <div class="div-img p-1 ms-4 rounded-3">
-      <img
-        (click)="changeBg('splash')"
-        class="logo"
-        src="../../../assets/logotinified.webp"
-        alt=""
-      />
-    </div>
-    <a
-      class="nav-link ps-5 txt-white-2 touch b-radius"
-      (click)="changeBg('aboutus')"
-      routerLink="/splash"
-      >Nosotros</a
-    >
-    <a
-      class="nav-link ps-5 txt-white-2 touch-2 b-radius"
-      (click)="changeBg('gallery')"
-      routerLink="/splash"
-      >Galeria</a
-    >
-    <a
-      class="nav-link ps-5 txt-white-2 touch-3 b-radius"
-      (click)="changeBg('community')"
-      routerLink="/splash"
-      >Comunidad</a
-    >
-    <a
-      class="nav-link ps-5 txt-white-2 touch-4 b-radius"
-      (click)="changeBg('activities')"
-      routerLink="/splash"
-      >Actividades</a
-    >
-    <a
-      class="nav-link ps-5 txt-white-2 touch-5 b-radius"
-      (click)="changeBg('contactus')"
-      routerLink="/splash"
-      >Contáctanos</a
-    >
-  </nav>
+<div class="super-div">
+  <div
+    #container
+    class="nav-container"
+    [ngClass]="splash ? 'bg-splash' : 'bg-green-soft-2'"
+    [ngClass]="aboutus ? 'bg-aboutus' : 'bg-splash'"
+    [ngClass]="gallery ? 'bg-gallery' : 'bg-splash'"
+    [ngClass]="community ? 'bg-community' : 'bg-splash'"
+    [ngClass]="activities ? 'bg-activities' : 'bg-splash'"
+    [ngClass]="contactus ? 'bg-contactus' : 'bg-splash'"
+  >
+    <nav class="nav d-flex flex-column mt-3 txt-3 py-5 pe-4 gap-4">
+      <div class="div-img p-1 ms-4 rounded-3">
+        <img
+          (click)="changeBg('splash')"
+          class="logo"
+          src="../../../assets/logotinified.webp"
+          alt=""
+        />
+      </div>
+      <a
+        class="nav-link ps-5 txt-white-2 touch b-radius"
+        (click)="changeBg('aboutus')"
+        routerLink="/splash"
+        >Nosotros</a
+      >
+      <a
+        class="nav-link ps-5 txt-white-2 touch-2 b-radius"
+        (click)="changeBg('gallery')"
+        routerLink="/splash"
+        >Galeria</a
+      >
+      <a
+        class="nav-link ps-5 txt-white-2 touch-3 b-radius"
+        (click)="changeBg('community')"
+        routerLink="/splash"
+        >Comunidad</a
+      >
+      <a
+        class="nav-link ps-5 txt-white-2 touch-4 b-radius"
+        (click)="changeBg('activities')"
+        routerLink="/splash"
+        >Actividades</a
+      >
+      <a
+        class="nav-link ps-5 txt-white-2 touch-5 b-radius"
+        (click)="changeBg('contactus')"
+        routerLink="/splash"
+        >Contáctanos</a
+      >
+    </nav>
+  </div>
 </div>
