@@ -1,4 +1,18 @@
- 
+ .bg-section-2{
+    background-color: #D2E9F9;
+ }
+
+ .padding-5{
+    padding: 4%;
+ }
+
+ .padding-x-5{
+    padding: 0% 4% 0% 4%;
+ }
+
+ .txt-full{
+    font-size: 6.0rem;
+}
 
 .div-splash{
     background-image: url("../../../assets/images/splash/classwebp.webp");
@@ -20,7 +34,6 @@
     backdrop-filter: blur(5px);
     height: 36rem
 }
-
 .txt-welcome{
     z-index: 2;
     position: absolute;
@@ -54,4 +67,15 @@ swiper{
 
 img {
     width: 100% !important;
+}
+/* Section 2  */
+.div-plane{
+    width: fit-content;
+    position: absolute;
+    right: 2%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
 }
