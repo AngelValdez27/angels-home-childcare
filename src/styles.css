@@ -6,6 +6,7 @@
 :root {
     --bg-module: #FCFCFC;
     --white-2: #F4F0F0;
+    --black-2: #424242;
     --splash-bg: #B7E899;
     --aboutus-bg: #0692F8;
     --gallery-bg: #973D99;
@@ -46,9 +47,41 @@
     color:var(--white-2) ;
 }
 
+.txt-black-2{
+    color: var(--black-2);
+}
+
 /*font-size*/
 .txt-3{
     font-size: 1.2rem;
+}
+
+.txt-4{
+    font-size: 1.5rem;
+}
+
+.txt-5{
+    font-size: 1.8rem;
+}
+
+.txt-6{
+    font-size: 2.0rem;
+}
+
+.txt-7{
+    font-size: 2.5rem;
+}
+.txt-9{
+    font-size: 3.0rem;
+}
+
+.txt-10{
+    font-size: 4.0rem;
+}
+
+/*align justify*/
+.txt-justify{
+    text-align: justify;
 }
 
 /*Container modules*/
