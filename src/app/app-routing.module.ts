@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'home', component: NavbarComponent },
   { path: 'splash', component: SplashComponent },
   { path: 'gallery', component: GalleryComponent},
-  { path: 'activities', component: ActivitiesComponent}
+  { path: 'activities', component: ActivitiesComponent},
 
   { path: 'community', component: CommunityComponent }
 ];
