@@ -39,6 +39,73 @@ export class GalleryComponent implements OnInit {
       
       image: '../../../assets/images/gallery/5.webp',
     },
+    {
+      
+      image: '../../../assets/images/gallery/6.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/13.webp',
+    },
+    
+  ];
+
+  slides_first = [
+   
+    {
+      
+      image: '../../../assets/images/gallery/7.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/8.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/9.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/10.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/11.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/12.webp',
+    },
+  ];
+
+  slides_second = [
+   
+   
+   
+    {
+      
+      image: '../../../assets/images/gallery/14.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/15.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/16.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/17.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/18.webp',
+    },
+    {
+      
+      image: '../../../assets/images/gallery/19.webp',
+    },
   ];
 
 

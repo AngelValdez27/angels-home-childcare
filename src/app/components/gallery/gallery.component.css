@@ -2,15 +2,16 @@
     background-image: url(../../../assets/images/gallery/fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: blur(15px);
 }
  
 
 .cloud{
-    width: 30rem;
+    width: 100%;
 }
 
 .airplane{
-    width: 20rem;
+    width: 100%;
 }
  
 .cube{
@@ -54,4 +55,13 @@ swiper{
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 0px;
     text-align: center;
+}
+
+.letters{
+    text-align: center;
+    color: rgb(56, 182, 255);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 25px #222;
+    
 }
