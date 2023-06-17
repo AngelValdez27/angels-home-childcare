@@ -2,6 +2,14 @@
   width: fit-content;
   position: absolute;
   z-index: 2;
+  left: -150px;
+  transition-duration: 1s;
+ 
+
+}
+
+.nav-container:is(:hover){
+  transform: translateX(150px);
 }
 
 .div-img {
