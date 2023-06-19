@@ -1,55 +1,302 @@
 :root {
-    --blanco: #FFFFFF;
-    --oscuro: #212121;
-    --primario: #6aaae6;
-    --secundario: #0ab92d;
-    --gris: #757575 ;
-    --underamarillo: #FFF735;
-    --underverde: #45FF35;
+  --blanco: #FFFFFF;
+  --oscuro: #212121;
+  --primario: #6aaae6;
+  --secundario: #0ab92d;
+  --gris: #757575;
+  --underamarillo: #FFF735;
+  --underverde: #45FF35;
 
-  }
-footer { 
-  z-index: 2;
-    width:100%;
-    background-image:url(../../../assets/nubefondo.webp); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding:10px 0px 25px 0px ;
-    left:0px;
-    bottom:0px;
-    height: 35rem;
+}
+
+.footer {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  background-image: url(../../../assets/nubefondo.webp);
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  left: 0px;
+  bottom: 0px;
+
 }
 
 .grid {
-    display: grid;
-    grid-template-columns:  25rem 25rem 25rem ;
- 
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+
 }
 
-.button{
-   background-color: #FFF735;
-   border-radius: .5rem;
-   width: 35%;
-   border: 1px solid #FFF735;
-   
+.button {
+  background-color: #FFF735;
+  border-radius: .5rem;
+  width: 35%;
+  border: 1px solid #FFF735;
+
+}
+
+.button1 {
+  background-color: #45FF35;
+  border-radius: .5rem;
+  width: 35%;
+  border: 1px solid #45FF35;
+
+}
+
+
+.mt-text {
+  margin-top: 17%;
+
+
+}
+
+
+.angel {
+  width: 20%;
+  position: absolute;
+  left: 45%;
+  z-index: 1;
+}
+
+.animation-img{
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, -4rem); }
+  100%   { transform: translate(0, -0px); }   
+}
+
+.logo {
+  width: 30%;
+}
+
+/* responsive */
+@media (max-width: 767px) {
+  .mt-text{
+    margin-top: 0%;
   }
+.logo{
+  width: 40%;
+}
 
-  .button1{
-    background-color: #45FF35;
-    border-radius: .5rem;
-    width: 35%;
-    border: 1px solid #45FF35;
-    
-   }
- 
-
-   .text1{
-    margin-top: 16rem;
-    
-    
-   } 
-
-   .angel{
-    width: 20%;
+.footer{
+  background-image: url(../../../assets/nubefondo.webp);
+}
   
-   }
+.mt-text-2{
+  margin-top: 30%;
+}
+.container-img{
+  padding: 8%;
+}
+.pl-text{
+  padding-left: 8%;
+}
+/* responsive angel animatiom */
+.angel {
+  bottom: -14rem;
+  left: 50%;
+
+}
+}
+
+@media (max-width: 567px) {
+  .mt-text-2{
+    margin-top: 40%;
+  }
+    
+  
+}
+
+@media (max-width: 365px) {
+    .mt-text-2{
+      margin-top: 45%;
+    }
+
+}
+
+/* responsive animation */
+@media (max-width: 950px) {
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -1rem); }
+    100%   { transform: translate(0, -0px); }   
+  }
+}
+
+@media (max-width: 670px) {
+
+  .angel {
+    bottom: -13rem;
+    left: 52%;
+  
+  }
+    
+}
+
+@media (max-width: 640px) {
+
+  .angel {
+    bottom: -14rem;
+    left: 54%;
+  
+  }
+    
+}
+
+@media (max-width: 610px) {
+
+  .angel {
+    bottom: -13rem;
+    left: 54%;
+  
+  }
+    
+}
+
+@media (max-width: 590px) {
+
+  .angel {
+    bottom: -13rem;
+    left: 55%;
+  
+  }
+    
+}
+
+@media (max-width: 576px) {
+
+  .angel {
+    bottom: -11rem;
+    left: 50%;
+  
+  }
+    
+}
+
+@media (max-width: 530px) {
+
+  .angel {
+    bottom: -10rem;
+    left: 50%;
+  
+  }
+    
+}
+
+@media (max-width: 475px) {
+
+  .angel {
+    bottom: -9.5rem;
+    left: 55%;
+  
+  }
+    
+}
+
+@media (max-width: 435px) {
+
+  .angel {
+    bottom: -9rem;
+    left: 55%;
+  
+  }
+    
+}
+
+@media (max-width: 395px) {
+
+  .angel {
+    bottom: -8.5rem;
+    left: 55%;
+  
+  }
+    
+}
+
+@media (max-width: 365px) {
+
+  .angel {
+    bottom: -8.5rem;
+    left: 56%;
+  
+  }
+    
+}
+
+@media (max-width: 345px) {
+
+  .angel {
+    bottom: -8.3rem;
+    left: 56%;
+  
+  }
+    
+}
+
+@media (max-width: 320px) {
+
+  .angel {
+    bottom: -7.9rem;
+    left: 60%;
+  
+  }
+    
+}
+@media (max-width: 300px) {
+
+  .angel {
+    bottom: -7.8rem;
+    left: 63%;
+  
+  }
+    
+}
+@media (max-width: 280px) {
+
+  .angel {
+    bottom: -7.5rem;
+    left: 65%;
+  
+  }
+    
+}
+
+@media (max-width: 270px) {
+
+  .angel {
+    bottom: -7.3rem;
+    left: 65%;
+  
+  }
+    
+}
+
+@media (max-width: 250px) {
+
+  .angel {
+    bottom: -7rem;
+    left: 68%;
+  
+  }
+    
+}
+
+@media (max-width: 220px) {
+
+  .angel {
+    bottom: -7rem;
+    left: 75%;
+  
+  }
+    
+}
+
+
