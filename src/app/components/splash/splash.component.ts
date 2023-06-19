@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions, Swiper, EffectCube } from 'swiper';
 SwiperCore.use([Navigation, Pagination, EffectCube, A11y]);
 
@@ -8,6 +8,13 @@ SwiperCore.use([Navigation, Pagination, EffectCube, A11y]);
   styleUrls: ['./splash.component.css']
 })
 export class SplashComponent implements OnInit {
+
+
+
+
+  show: boolean | undefined;
+  toTop = 100;
+
 
   constructor() { }
 
@@ -36,5 +43,19 @@ export class SplashComponent implements OnInit {
       image: 'assets/3.jpg',
     },
   ];
+
+  //Go to top Window
+
+
+
+  goToTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
+
 
 }

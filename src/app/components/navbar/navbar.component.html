@@ -1,16 +1,87 @@
-<div class="super-div">
-  <div
-    #container
-    class="nav-container"
-    [ngClass]="splash ? 'bg-splash' : 'bg-green-soft-2'"
-    [ngClass]="aboutus ? 'bg-aboutus' : 'bg-splash'"
-    [ngClass]="gallery ? 'bg-gallery' : 'bg-splash'"
-    [ngClass]="community ? 'bg-community' : 'bg-splash'"
-    [ngClass]="activities ? 'bg-activities' : 'bg-splash'"
-    [ngClass]="contactus ? 'bg-contactus' : 'bg-splash'"
+<div id="super-div" class="super-div">
+  <a
+    *ngIf="show"
+    #arrow_top
+    class="div-arrow-top animate__animated animate__headShake animate__delay-2s animate__infinite"
+    [ngClass]="addingClass() == 'bg-splash' ? 'bg-arrow-top' : addingClass()"
+    (click)="goToTop()"
   >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon icon-tabler icon-tabler-arrow-narrow-up"
+      width="48"
+      height="48"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="#acb34a"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 5l0 14" />
+      <path d="M16 9l-4 -4" />
+      <path d="M8 9l4 -4" />
+    </svg>
+  </a>
+  <!-- arrow right end -->
+  <div #container class="nav-container" [ngClass]="addingClass()">
     <nav class="nav d-flex flex-column mt-3 txt-3 py-5 pe-4 gap-4">
-      <div class="div-img p-1 ms-4 rounded-3">
+      <div
+        #arrow_right
+        class="div-arrow arrow-right animate__animated animate__delay-1s"
+        [ngClass]="addingClass() == 'bg-splash' ? 'bg-arrow' : addingClass()"
+        (click)="showMenu()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-square-rounded-arrow-right ms-3 p-1 txt-white-2"
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#F4F0F0"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 16l4 -4l-4 -4" />
+          <path d="M8 12h8" />
+          <path
+            d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+          />
+        </svg>
+      </div>
+      <!-- arrow right end -->
+      <div
+        #arrow_left
+        class="div-arrow arrow-left animate__animated animate__delay-1s"
+        [ngClass]="addingClass() == 'bg-splash' ? 'bg-arrow' : addingClass()"
+        (click)="hideMenu()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-square-rounded-arrow-left me-3 p-1 txt-white-2"
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#F4F0F0"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 8l-4 4l4 4" />
+          <path d="M16 12h-8" />
+          <path
+            d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+          />
+        </svg>
+      </div>
+      <!-- arrow left end -->
+      <div class="div-img p-1 ml-1 rounded-3">
         <img
           (click)="changeBg('splash')"
           class="logo"
@@ -21,31 +92,31 @@
         />
       </div>
       <a
-        class="nav-link ps-5 txt-white-2 touch b-radius"
+        class="nav-link pl-5 txt-white-2 touch b-radius"
         (click)="changeBg('aboutus')"
         routerLink="/splash"
         >Nosotros</a
       >
       <a
-        class="nav-link ps-5 txt-white-2 touch-2 b-radius"
+        class="nav-link pl-5 txt-white-2 touch-2 b-radius"
         (click)="changeBg('gallery')"
         routerLink="/gallery"
         >Galeria</a
       >
       <a
-        class="nav-link ps-5 txt-white-2 touch-3 b-radius"
+        class="nav-link pl-5 txt-white-2 touch-3 b-radius"
         (click)="changeBg('community')"
-        routerLink="/splash"
+        routerLink="/community"
         >Comunidad</a
       >
       <a
-        class="nav-link ps-5 txt-white-2 touch-4 b-radius"
+        class="nav-link pl-5 txt-white-2 touch-4 b-radius"
         (click)="changeBg('activities')"
         routerLink="/activities"
         >Actividades</a
       >
       <a
-        class="nav-link ps-5 txt-white-2 touch-5 b-radius"
+        class="nav-link pl-5 txt-white-2 touch-5 b-radius"
         (click)="changeBg('contactus')"
         routerLink="/splash"
         >Contáctanos</a
