@@ -6,15 +6,16 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 
 import { CommunityComponent } from './components/community/community.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'splash', pathMatch: 'full' },
   { path: 'home', component: NavbarComponent },
   { path: 'splash', component: SplashComponent },
-  { path: 'gallery', component: GalleryComponent},
-  { path: 'activities', component: ActivitiesComponent},
-
-  { path: 'community', component: CommunityComponent }
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'activities', component: ActivitiesComponent },
+  { path: 'community', component: CommunityComponent },
+  { path: 'about-us', component: AboutUsComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,45 @@
+.padding-5 {
+  padding: 4%;
+}
+
+.bg-about-local {
+  background-image: url('../../../assets/images/about-us/bg_about.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #DDFFFD;
+}
+
+.container-img {
+  text-align: center;
+}
+
+/* first section */
+
+.tree-leaf {
+  width: 100%;
+}
+
+.terosaur {
+  width: 90%;
+}
+
+.container-text{
+    position:absolute;
+    width: 35%;
+    text-align: center;
+    background-color: transparent;
+    line-height: 2rem;
+
+}
+
+.div-container-text{
+    top: 25%;
+    margin-left: 6%;
+}
+
+.div-container-text-2{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+/* Second section */

@@ -25,7 +25,12 @@
     </svg>
   </a>
   <!-- arrow top end -->
-  <div #container class="nav-container" [ngClass]="addingClass()">
+  <!-- funcionaba con [ngClass]="addingClass()"   -->
+  <div
+    #container
+    class="nav-container"
+    [ngClass]="addingClass() == 'bg-splash' ? 'bg-splash' : addingClass()"
+  >
     <nav class="nav d-flex flex-column mt-3 txt-3 py-5 pe-4 gap-4">
       <div
         #arrow_right
@@ -94,7 +99,7 @@
       <a
         class="nav-link pl-5 txt-white-2 touch b-radius"
         (click)="changeBg('aboutus')"
-        routerLink="/splash"
+        routerLink="/about-us"
         >Nosotros</a
       >
       <a

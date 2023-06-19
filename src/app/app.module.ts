@@ -10,6 +10,7 @@ import { SplashComponent } from './components/splash/splash.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { SwiperModule } from 'swiper/angular';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SwiperModule } from 'swiper/angular';
     GalleryComponent,
     SplashComponent,
     NavbarComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

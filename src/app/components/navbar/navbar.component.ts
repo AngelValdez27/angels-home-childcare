@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
   @ViewChild('arrow_top') arrow_top!: ElementRef
 
   //classname
-  className = "bg-splash"
+  className = ""
 
   //booleans variables
   splash: boolean = true
@@ -31,6 +31,7 @@ export class NavbarComponent implements OnInit {
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
+
   }
   // addClass(el: any, name: string): void
   //removeClass(el: any, name: string): void
