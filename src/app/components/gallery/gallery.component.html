@@ -1,17 +1,17 @@
 <div class="bg-gallery">
   <section class="p-5">
     <div
-      class="offset-md-2 offset-2 col-md-10 col-10 br-radius-30 bg-module bg"
+      class="offset-md-2 offset-2 col-md-10 col-10 col-sm-10 br-radius-30 bg-module bg"
     >
       <div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3 col-3">
             <img
               class="airplane"
               src="../../../assets/images/gallery/avion.webp"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12 col-12 div-cloud">
             <img
               class="cloud"
               src="../../../assets/images/gallery/nubegaleria.webp"
@@ -21,36 +21,36 @@
       </div>
 
       <div class="">
-        <div class="col-md-12 letters">
+        <div class="col-md-12 col-12 col-sm-12 letters">
           <p class="txt-10">Nuestras aulas recreativas</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="offset-md-3 col-md-6 col-6">
+        <div class="offset-md-3 col-md-6 col-12 col-sm-12">
           <div class="div-img-cube">
             <img class="cube" src="../../../assets/images/gallery/cubos.webp" />
           </div>
-          <swiper effect="cube">
+          <swiper class="swiper" effect="cube">
             <ng-template *ngFor="let slide of slides" swiperSlide
-              ><img class="img-swiper-1" src="{{ slide.image }}"
+              ><img class="img-swiper br-img-1" src="{{ slide.image }}"
             /></ng-template>
           </swiper>
         </div>
       </div>
 
       <div class="row">
-        <div class="container col-md-6 col-6">
-          <swiper effect="cube">
+        <div class="container col-md-6 col-12 col-sm-12">
+          <swiper class="swiper" effect="cube">
             <ng-template *ngFor="let slide_first of slides_first" swiperSlide
-              ><img class="img-swiper-2" src="{{ slide_first.image }}"
+              ><img class="img-swiper br-img-2" src="{{ slide_first.image }}"
             /></ng-template>
           </swiper>
         </div>
-        <div class="container col-md-6 col-6">
-          <swiper effect="cube">
+        <div class="container col-md-6 col-12 col-sm-12">
+          <swiper class="swiper" effect="cube">
             <ng-template *ngFor="let slide_second of slides_second" swiperSlide
-              ><img class="img-swiper-3" src="{{ slide_second.image }}"
+              ><img class="img-swiper br-img-3" src="{{ slide_second.image }}"
             /></ng-template>
           </swiper>
         </div>
