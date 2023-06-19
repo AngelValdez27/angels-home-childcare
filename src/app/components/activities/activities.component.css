@@ -3,9 +3,25 @@
     background-image: url("../../../assets/images/activities/fondoactivities.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
+
+
 .padding-4{
-    padding: 4%
+    padding: 4%;
+}
+
+.div-lienzos{
+    background-color: #fff3d4;
+}
+
+.div-tittle{
+    color: white;
+    text-align: center;
+}
+.div-our{
+    color: white;
+    text-align: center;
 }
 
