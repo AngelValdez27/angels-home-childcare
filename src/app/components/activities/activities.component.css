@@ -1,10 +1,11 @@
 .bg{
-background-image: url(../../../assets/images/activities/fondoactivities.webp);
-background-repeat: no-repeat;
-background-size: cover;
+
+    background-image: url("../../../assets/images/activities/fondoactivities.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.background{
-    background-color: white;
-    
+.padding-4{
+    padding: 4%
 }
+
