@@ -2,6 +2,12 @@
 @import "swiper/swiper.min.css";
 @import "swiper/modules/pagination/pagination.min.css";
 @import "swiper/modules/navigation/navigation.min.css";
+html, body {  
+    height:100%;
+  } 
+  html{
+    scroll-behavior: smooth;  
+  }
 /*Pallete colors*/
 :root {
     --bg-module: #FCFCFC;
