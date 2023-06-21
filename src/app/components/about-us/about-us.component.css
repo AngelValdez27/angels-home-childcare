@@ -23,7 +23,7 @@
 
 .container-tero{
   text-align: end;
-  animation: floating 3s ease-in-out infinite
+  animation: float 3s ease-in-out infinite
 }
 
 .terosaur {
@@ -69,18 +69,25 @@
 .trees{
   width: 80%;
 }
+
+.container-philosophy{
+  position: absolute;
+  width: 25%;
+  top: 99rem;
+  margin-left: 15.5%;
+}
 /* animation floating */
 
-.floating { 
-  animation-name: floating;
+.float { 
+  animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes floating {
+@keyframes float {
   0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 5px); }
+  50%  { transform: translate(0, 10px); }
   100%   { transform: translate(0, -0px); }   
 } 
 
