@@ -1,27 +1,75 @@
-.bg{
+.bg {
 
-    background-image: url("../../../assets/images/activities/fondoactivities.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../../../assets/images/activities/fondoactivities.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.div-bg {
+  background-color: #ffffff0c;
+  backdrop-filter: blur(3px);
+}
+
+.padding-4 {
+  padding: 4%;
+}
+
+.div-canvas {
+  background-color: #fff3d4;
+}
+
+.div-tittle {
+  color: white;
+  text-align: center;
+}
+
+.div-our {
+  color: white;
+  text-align: center;
+}
+
+.div-img {
+  width: fit-content;
+  padding-left: 10px
+}
+/* 
+.div-blue-line{
     
+} */
+
+.img-blue-line{
+    width: 23rem;
+}
+.swiper {
+  width: 18rem;
+  height: 18rem;
 }
 
-
-
-.padding-4{
-    padding: 4%;
+.img-swiper {
+  width: 100%;
+  border-radius: 1rem;
+  height: 100%;
 }
 
-.div-lienzos{
-    background-color: #fff3d4;
+/* .div-canvas-1{
+
+} */
+
+.div-swiper {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+
 }
 
-.div-tittle{
-    color: white;
-    text-align: center;
-}
-.div-our{
-    color: white;
-    text-align: center;
-}
+.div-swiper-1 {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+  
+  }
 
+.img {
+  width: 100%;
+}
