@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { NavbarServiceService } from 'src/app/services/navbar-service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -24,14 +25,20 @@ export class NavbarComponent implements OnInit {
   community: boolean = false
   contactus: boolean = false
   activities: boolean = false
+  redirect: boolean = false
 
   toTop = 350;
   show = false
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2, private navbarService: NavbarServiceService) { }
 
   ngOnInit(): void {
+    this.redirect = false
+    this.navbarService.variable.subscribe(r => {
+      this.className = r
+      console.log("nombre de clase_ ", this.className);
 
+    })
   }
   // addClass(el: any, name: string): void
   //removeClass(el: any, name: string): void
@@ -39,37 +46,45 @@ export class NavbarComponent implements OnInit {
   changeBg(section: string) {
     if (section === 'splash') {
       this.className = 'bg-splash'
-      this.hideMenu()
-
+      if (this.redirect == true) {
+        this.hideMenu()
+      }
     }
 
     if (section === 'aboutus') {
       this.className = 'bg-aboutus'
-      this.hideMenu()
-
+      if (this.redirect == true) {
+        this.hideMenu()
+      }
     }
 
     if (section === 'gallery') {
       this.className = 'bg-gallery'
-      this.hideMenu()
+      if (this.redirect == true) {
+        this.hideMenu()
+      }
     }
 
     if (section === "contactus") {
       this.className = 'bg-contactus'
-      this.hideMenu()
+      if (this.redirect == true) {
+        this.hideMenu()
+      }
 
     }
 
     if (section === "community") {
       this.className = 'bg-community'
-      this.hideMenu()
-
+      if (this.redirect == true) {
+        this.hideMenu()
+      }
     }
 
     if (section === "activities") {
       this.className = 'bg-activities'
-      this.hideMenu()
-
+      if (this.redirect == true) {
+        this.hideMenu()
+      }
     }
 
   }
@@ -79,6 +94,7 @@ export class NavbarComponent implements OnInit {
   }
 
   showMenu() {
+    this.redirect = true
     console.log("show menú");
     this.renderer.removeStyle(this.container.nativeElement, 'transform')
     this.renderer.setStyle(this.container.nativeElement, 'transform', 'translateX(0.5%)')
@@ -91,7 +107,8 @@ export class NavbarComponent implements OnInit {
   }
 
   hideMenu() {
-    console.log("show menú");
+    this.redirect = false
+    console.log("show menú", this.redirect);
     this.renderer.removeStyle(this.container.nativeElement, 'transform')
     this.renderer.setStyle(this.container.nativeElement, 'transform', 'translateX(-100%)')
     //this.renderer.removeClass(this.container.nativeElement, 'animate__bounceInLeft')
@@ -113,7 +130,7 @@ export class NavbarComponent implements OnInit {
       document.body.scrollTop ||
       0;
 
-    console.log('[scroll]', scrollPosition);
+    //console.log('[scroll]', scrollPosition);
 
     if (scrollPosition >= this.toTop) {
       this.show = true;

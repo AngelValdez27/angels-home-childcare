@@ -29,13 +29,14 @@
   <div
     #container
     class="nav-container"
-    [ngClass]="addingClass() == 'bg-splash' ? 'bg-splash' : addingClass()"
+    [ngClass]="addingClass() == '' ? 'bg-splash' : addingClass()"
   >
-    <nav class="nav d-flex flex-column mt-3 txt-3 py-5 pe-4 gap-4">
+    <nav class="nav d-flex flex-column mt-3 txt-3 py-5 pe-4 gap-4 col-12">
+      <!--  [ngClass]="addingClass() == 'bg-splash' ? 'bg-arrow' : addingClass()"  funcionaba asi tmb-->
       <div
         #arrow_right
         class="div-arrow arrow-right animate__animated animate__delay-1s"
-        [ngClass]="addingClass() == 'bg-splash' ? 'bg-arrow' : addingClass()"
+        [ngClass]="addingClass() == '' ? 'bg-arrow' : addingClass()"
         (click)="showMenu()"
       >
         <svg
@@ -62,7 +63,7 @@
       <div
         #arrow_left
         class="div-arrow arrow-left animate__animated animate__delay-1s"
-        [ngClass]="addingClass() == 'bg-splash' ? 'bg-arrow' : addingClass()"
+        [ngClass]="addingClass() == '' ? 'bg-arrow' : addingClass()"
         (click)="hideMenu()"
       >
         <svg

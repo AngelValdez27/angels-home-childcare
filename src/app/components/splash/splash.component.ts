@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, SwiperOptions, Swiper, EffectCube } from 'swiper';
 SwiperCore.use([Navigation, Pagination, EffectCube, A11y]);
+import { NavbarServiceService } from 'src/app/services/navbar-service.service';
 
 @Component({
   selector: 'app-splash',
@@ -10,13 +11,13 @@ SwiperCore.use([Navigation, Pagination, EffectCube, A11y]);
 export class SplashComponent implements OnInit {
 
 
-
+  className = ""
 
   show: boolean | undefined;
   toTop = 100;
 
 
-  constructor() { }
+  constructor(private navbarService: NavbarServiceService) { }
 
   ngOnInit(): void {
   }
@@ -56,6 +57,18 @@ export class SplashComponent implements OnInit {
     });
   }
 
+  //redirect
 
+  changeBg(section: string) {
+    if (section === 'splash') {
+      this.className = 'bg-splash'
+      this.navbarService.variable.next('bg-aboutus')
+
+    }
+  }
+
+  addingClass() {
+    this.navbarService.variable.next('bg-aboutus')
+  }
 
 }
