@@ -4,10 +4,10 @@
     background-size: cover;
    
 }
-
+ 
 .div-bg{
-    background-color: #ffffff0c;
-    backdrop-filter: blur(3px);
+    background-color: #0707070c;
+    backdrop-filter: blur(15px);
 }
  
 .cloud{
