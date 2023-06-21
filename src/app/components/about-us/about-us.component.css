@@ -7,16 +7,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #DDFFFD;
+  padding-top: 3%;
 }
 
 .container-img {
   text-align: center;
+  padding: 2%;
 }
 
-/* first section */
+/* first and second section */
 
 .tree-leaf {
   width: 100%;
+}
+
+.container-tero{
+  text-align: end;
+  animation: floating 3s ease-in-out infinite
 }
 
 .terosaur {
@@ -29,11 +36,10 @@
     text-align: center;
     background-color: transparent;
     line-height: 2rem;
-
 }
 
 .div-container-text{
-    top: 25%;
+    top: 31%;
     margin-left: 6%;
 }
 
@@ -42,4 +48,39 @@
     margin-left: 5%;
 }
 
-/* Second section */
+
+/* third section */
+.container-vulcan{
+  width: 100%;
+}
+.vulcan{
+  width: 100%;
+}
+.container-dino{
+  position:absolute;
+  right: 15%;
+}
+.dino{
+  width: 60%;
+}
+.container-trees{
+  width: 100%;
+}
+.trees{
+  width: 80%;
+}
+/* animation floating */
+
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 5px); }
+  100%   { transform: translate(0, -0px); }   
+} 
+

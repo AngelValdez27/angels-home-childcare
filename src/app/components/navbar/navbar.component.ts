@@ -39,26 +39,37 @@ export class NavbarComponent implements OnInit {
   changeBg(section: string) {
     if (section === 'splash') {
       this.className = 'bg-splash'
+      this.hideMenu()
+
     }
 
     if (section === 'aboutus') {
       this.className = 'bg-aboutus'
+      this.hideMenu()
+
     }
 
     if (section === 'gallery') {
       this.className = 'bg-gallery'
+      this.hideMenu()
     }
 
     if (section === "contactus") {
       this.className = 'bg-contactus'
+      this.hideMenu()
+
     }
 
     if (section === "community") {
       this.className = 'bg-community'
+      this.hideMenu()
+
     }
 
     if (section === "activities") {
       this.className = 'bg-activities'
+      this.hideMenu()
+
     }
 
   }
