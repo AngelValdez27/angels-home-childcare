@@ -1,5 +1,7 @@
 import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { NavbarServiceService } from 'src/app/services/navbar-service.service';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,8 @@ import { NavbarServiceService } from 'src/app/services/navbar-service.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  href: string = "";
+  hostlocal: string = ""
 
   //DOM variables
   @ViewChild('container')
@@ -30,15 +34,47 @@ export class NavbarComponent implements OnInit {
   toTop = 350;
   show = false
 
-  constructor(private renderer: Renderer2, private navbarService: NavbarServiceService) { }
+  constructor(private renderer: Renderer2, private navbarService: NavbarServiceService, private location: Location, private router: Router) { }
 
   ngOnInit(): void {
     this.redirect = false
+    //servicio para mandar parametro de otro componente no hijo a este componente, cambio de booleano para el navbar
     this.navbarService.variable.subscribe(r => {
       this.className = r
-      console.log("nombre de clase_ ", this.className);
-
+      //console.log("nombre de clase_ ", this.className);
     })
+
+
+    this.href = window.location.href; //path complete
+    this.hostlocal = window.location.host //host path
+    //console.log("href", this.href);
+    let parsedUrl = new URL(window.location.href);
+    let baseUrl = parsedUrl.origin;
+    //console.log(baseUrl);
+
+    /* if (this.href == `http://${this.hostlocal}/gallery`) {
+      this.className = 'bg-gallery'
+    } */
+
+    //TODO: CAMBIAR A HTTPS AL SUBIR AL SERVIDOR
+    if (this.href == `${baseUrl}/splash`) {
+      this.className = 'bg-splash'
+    }
+    if (this.href == `${baseUrl}/about-us`) {
+      this.className = 'bg-aboutus'
+    }
+    if (this.href == `${baseUrl}/gallery`) {
+      this.className = 'bg-gallery'
+    }
+    if (this.href == `${baseUrl}/contact-us`) {
+      this.className = 'bg-contactus'
+    }
+    if (this.href == `${baseUrl}/community`) {
+      this.className = 'bg-community'
+    }
+    if (this.href == `${baseUrl}/activities`) {
+      this.className = 'bg-activities'
+    }
   }
   // addClass(el: any, name: string): void
   //removeClass(el: any, name: string): void
@@ -49,6 +85,10 @@ export class NavbarComponent implements OnInit {
       if (this.redirect == true) {
         this.hideMenu()
       }
+      /* this.className = 'bg-splash'
+      if (this.redirect == true) {
+        this.hideMenu()
+      } */
     }
 
     if (section === 'aboutus') {
