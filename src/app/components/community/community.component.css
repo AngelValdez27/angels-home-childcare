@@ -1,3 +1,108 @@
-div{
-    scroll-behavior: smooth;
+.bg-module-community {
+  background-color: #FFF7DC;
+}
+
+.container-sections {
+  padding: 8% 0% 3% 0%;
+}
+
+.padding-5 {
+  padding: 4%;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+/* first section */
+.row {
+  --bs-gutter-x: 0;
+}
+
+.first {
+  padding-top: 1%;
+  background-color: #F6FFDC;
+  position: relative;
+  z-index: 3;
+}
+
+.img-explorer {
+    position: absolute;
+    top: 6%;
+    z-index: 2;
+    right: 15%;
+    width: 7%;
+}
+
+.img-branch {
+  width: 100%;
+}
+
+.div-text-br {
+  padding: 0% 1% 0% 8%;
+}
+
+.pg-2 {
+  padding-left: 12%;
+}
+
+/* .giraffe-container{
+   
+ } */
+.img-giraffe {
+  width: 65%;
+}
+
+/* second section */
+.div-second{
+  margin-top: 10%;
+}
+
+.container-rocks{
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.img-rocks{
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.div-text1{
+  padding: 0% 0% 0% 4%;
+  background-color: transparent;
+}
+
+.padd-left-2{
+  padding-left: 6%;
+}
+
+.feets{
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  left: 45%;
+  bottom: -70%;
+}
+
+/* third section */
+
+.div-third{
+  position: relative;
+  z-index: 2;
+  margin-top: 10%;
+}
+
+.div-elephant-text{
+  position: absolute;
+  width: 50%; 
+  right: 1%;
+}
+
+.img-elephant{
+  position: relative;
+  z-index: 2;
+  width: 90%;
 }

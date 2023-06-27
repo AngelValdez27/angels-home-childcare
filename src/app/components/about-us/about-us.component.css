@@ -6,8 +6,9 @@
   background-image: url('../../../assets/images/about-us/bg_about.webp');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #DDFFFD;
   padding-top: 3%;
+  padding-bottom: 0.5%;
+  padding-left: 0.2%;
 }
 
 .container-img {
@@ -21,7 +22,7 @@
   width: 100%;
 }
 
-.container-tero{
+.container-tero {
   text-align: end;
   animation: float 3s ease-in-out infinite
 }
@@ -30,55 +31,61 @@
   width: 90%;
 }
 
-.container-text{
-    position:absolute;
-    width: 35%;
-    text-align: center;
-    background-color: transparent;
-    line-height: 2rem;
+.container-text {
+  position: absolute;
+  width: 35%;
+  text-align: center;
+  background-color: transparent;
+  line-height: 2rem;
 }
 
-.div-container-text{
-    top: 31%;
-    margin-left: 6%;
+.div-container-text {
+  top: 31%;
+  margin-left: 6%;
 }
 
-.div-container-text-2{
-    margin-top: 10%;
-    margin-left: 5%;
+.div-container-text-2 {
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
 
 /* third section */
-.container-vulcan{
+.container-vulcan {
   width: 100%;
 }
-.vulcan{
+
+.vulcan {
   width: 100%;
 }
-.container-dino{
-  position:absolute;
+
+.container-dino {
+  position: absolute;
   right: 15%;
 }
-.dino{
+
+.dino {
   width: 60%;
 }
-.container-trees{
+
+.container-trees {
   width: 100%;
 }
-.trees{
+
+.trees {
   width: 80%;
 }
 
-.container-philosophy{
+.container-philosophy {
   position: absolute;
   width: 25%;
   top: 99rem;
   margin-left: 15.5%;
 }
+
 /* animation floating */
 
-.float { 
+.float {
   animation-name: float;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -86,8 +93,63 @@
 }
 
 @keyframes float {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 10px); }
-  100%   { transform: translate(0, -0px); }   
-} 
+  0% {
+    transform: translate(0, 0px);
+  }
 
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1319px) {
+  .container-text {
+    width: 30%;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .div-container-text {
+    margin-left: 10%;
+  }
+  .div-container-text-2 {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 1291px) {
+  .container-philosophy {
+    width: 20%;
+    top: 94rem;
+    margin-left: 17%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .div-container-text {
+    top: 23%;
+  }
+  .container-philosophy {
+    top: 200%; 
+  }
+}
+
+@media (max-width: 1230px) {
+  .div-container-text {
+    top: 23%;
+  }
+  .container-philosophy {
+    top: 198%;
+  }
+}
+@media (max-width: 1202px) {
+  .container-philosophy {
+    top: 193%;
+  }
+}

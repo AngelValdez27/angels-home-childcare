@@ -93,6 +93,10 @@ html, body {
     text-align: justify;
 }
 
+.txt-center{
+    text-align: center;
+}
+
 /*Container modules*/
 
 .ms-8{
